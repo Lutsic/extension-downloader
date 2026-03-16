@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>search</title>
+</head>
+<body>
+
+<input id="search" placeholder="search">
+<div id="status">Data loading</div>
+<ul id="results"></ul>
+
+<script>
+const search = document.getElementById("search");
+const results = document.getElementById("results");
+const statusEl = document.getElementById("status");
+
+function loadScript(url) {
+  return new Promise((resolve, reject) => {
+    const s = document.createElement("script");
+    s.src = url;
+    s.onload = resolve;
+    s.onerror = () => reject(new Error("Не удалось загрузить script"));
+    document.body.appendChild(s);
+  });
+}
+
+loadScript("https://oultqkpsmqszpiqzahih.supabase.co/storage/v1/object/public/files/data.js")
+  .then(() => {
+    statusEl.textContent = "All data loaded correctly";
+  })
+  .catch(err => {
+    console.error(err);
+    statusEl.textContent = "Ошибка загрузки данных: " + err.message;
+  });
+
+search.oninput = () => {
+  const q = search.value.toLowerCase();
+  results.innerHTML = "";
+
+  if (typeof DATA === "undefined" || !q) return;
+
+  let count = 0;
+
+  for (const name in DATA) {
+    if (name.toLowerCase().includes(q)) {
+      const li = document.createElement("li");
+      const a = document.createElement("a");
+
+      a.textContent = name;
+      a.href = DATA[name];
+      a.target = "_blank";
+
+      li.appendChild(a);
+      results.appendChild(li);
+
+      if (++count >= 500) break;
+    }
+  }
+};
+</script>
+
+</body>
+</html>
