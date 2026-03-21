@@ -47,7 +47,7 @@ search.oninput = () => {
       li.appendChild(a);
       results.appendChild(li);
 
-      if (++count >= 500) break;
+      if (++count >= 100) break;
     }
   }
 };
