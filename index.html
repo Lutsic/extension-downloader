@@ -5,64 +5,47 @@
   <title>extension .crx download</title>
   <meta name="description" content="Download chrome extension crx .crx files without using chrome web store">
   <meta name="keywords" content="extensions,chrome,crx,.crx,crx3,crx file,crx files,download crx,chrome web store,chrome extension">
+    <link rel="stylesheet" href="css/main.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 
-<h1>Extension downloading</h1>
-<h4>!Website is still in development, search is fully functional but not user-friendly!</h4>
-<input id="search" placeholder="search"> <a href="https://github.com/Lutsic/crx-extension-downloader/raw/refs/heads/main/python_tools/zip/crx_python_tools.zip"> Download local crx python tools</a>
-<div id="status">Data loading</div>
-<ul id="results"></ul>
+<div class="header">
+    <h1>Extension downloader</h1>
+    <h6>An easy way to get .crx file of any extension on Chrome Web Store!</h6>
+</div>
 
-<script>
-const search = document.getElementById("search");
-const results = document.getElementById("results");
-const statusEl = document.getElementById("status");
+<div class="tab1">
+<button onclick="openTab(0)">Search</button>
+</div>
+<div class="tab2">
+<button onclick="openTab(1)">Extensions</button>
+</div> 
+<div class="tab3">
+<button onclick="openTab(2)">Python tools</button>
+</div>
+    
+<div class="content active content1">
+    <div class="size2"><b>Main search</b></div>
+    <p class="size1">Works by ID</p>
+    <input id="search" placeholder="..." class="size1">
+    <div id="status" class="size1">Data loading</div>
+    <ul id="results" class="size1"></ul>   
+</div>
+<div class="content content2">
+    Work In Progress
+</div>
+    
+<div class="content content3">
+<h4 class="size2">Local crx Python tools</h4>
+    <p class="size1">You can get a pack of local Python scripts, that can help you with many thing. For example: building a .crx file downloading link from extension's Chrome Web Store page link. </p>
+<a href="https://github.com/Lutsic/crx-extension-downloader/raw/refs/heads/main/python_tools/zip/crx_python_tools.zip"><button class="download_button">Download</button></a>
+</div>
 
-function loadScript(url) {
-  return new Promise((resolve, reject) => {
-    const s = document.createElement("script");
-    s.src = url;
-    s.onload = resolve;
-    s.onerror = () => reject(new Error("Error during loading script"));
-    document.body.appendChild(s);
-  });
-}
+<a href="https://github.com/Lutsic/crx-extension-downloader">
+  <img src="img/github_icon.png" class="github_icon">
+</a>
 
-loadScript("https://oultqkpsmqszpiqzahih.supabase.co/storage/v1/object/public/files/data.js")
-  .then(() => {
-    statusEl.textContent = "All data loaded correctly";
-  })
-  .catch(err => {
-    console.error(err);
-    statusEl.textContent = "Error during data loading: " + err.message;
-  });
-
-search.oninput = () => {
-  const q = search.value.toLowerCase();
-  results.innerHTML = "";
-
-  if (typeof DATA === "undefined" || !q) return;
-
-  let count = 0;
-
-  for (const name in DATA) {
-    if (name.toLowerCase().includes(q)) {
-      const li = document.createElement("li");
-      const a = document.createElement("a");
-
-      a.textContent = name;
-      a.href = DATA[name];
-      a.target = "_blank";
-
-      li.appendChild(a);
-      results.appendChild(li);
-
-      if (++count >= 500) break;
-    }
-  }
-};
-</script>
-
+<script src="js/main.js" defer></script>
 </body>
 </html>
