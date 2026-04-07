@@ -18,7 +18,7 @@ function loadScript(url) {
   });
 }
 
-loadScript("https://oultqkpsmqszpiqzahih.supabase.co/storage/v1/object/public/files/data.js")
+loadScript("https://github.com/Lutsic/crx-extension-downloader/releases/download/release/data.js")
   .then(() => {
     statusEl.textContent = "All data loaded correctly";
   })
