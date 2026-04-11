@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>extension .crx download</title>
-  <meta name="description" content="Download chrome extension crx .crx files without using chrome web store">
+  <meta name="description" content="An easy way to get .crx file of any extension on Chrome Web Store!">
   <meta name="keywords" content="extensions,chrome,crx,.crx,crx3,crx file,crx files,download crx,chrome web store,chrome extension">
     <link rel="stylesheet" href="css/main.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,25 +16,17 @@
 </div>
 
 <div class="tabs">
-    <button onclick="openTab(0)">Search</button>
-    <button onclick="openTab(1)">Extensions</button>
-    <button onclick="openTab(2)">Coming soon...</button>
+    <button onclick="openTab(0)">Extensions</button>
+    <button onclick="openTab(1)">Themes</button>
+    <button onclick="openTab(2)">Search</button>
 </div>
 
 <a href="https://github.com/Lutsic/crx-extension-downloader">
   <img src="img/github_icon.png" class="github_icon">
 </a>
     
-<div class="content content1">
-    <div class="size2"><b>Main search</b></div>
-    <p class="size1">Works by name in the link, not by displaying one. Ex: <i>Pinterest Love = pinterest_love_pinterest</i>.</p>
-    <p class="size1">The "✓" means that this is verified version of popular extension.</p>
-    <input id="search" placeholder="uwu ^_^" class="size1">
-    <div id="status" class="size1">Data loading...</div>
-    <ul id="results" class="size1"></ul>   
-</div>
-<div class="content active content2">
-  <div class="grid">
+<div class="content active content0">  
+    <div class="grid">
 
     <a href="https://clients2.google.com/service/update2/crx?response=redirect&prodversion=122.0&acceptformat=crx2,crx3&x=id%3Diginnfkhmmfhlkagcmpgofnjhanpmklb%26installsource%3Dondemand%26uc" class="tile-link">
     <div class="tile">
@@ -44,6 +36,7 @@
             <div class="desc">Play over 50 levels of box-jumping madness!</div>
         </div>
     </div>
+    </a>
 
     <a href="https://clients2.google.com/service/update2/crx?response=redirect&prodversion=122.0&acceptformat=crx2,crx3&x=id%3Dmjjgmlmpeaikcaajghilhnioimmaibon%26installsource%3Dondemand%26uc" class="tile-link">
     <div class="tile">
@@ -53,6 +46,7 @@
             <div class="desc">Boxel 3D is a speedrunning game packed with challenging levels.</div>
         </div>
     </div>
+    </a>
 
     <a href="https://clients2.google.com/service/update2/crx?response=redirect&prodversion=122.0&acceptformat=crx2,crx3&x=id%3Dmmgjkfjlmdkmoipndaeombfnomjfgeff%26installsource%3Dondemand%26uc" class="tile-link">
     <div class="tile">
@@ -62,6 +56,7 @@
             <div class="desc">Boxel Golf is a multiplayer golf game packed with challenging courses.</div>
         </div>
     </div>
+    </a>
 
     <a href="https://clients2.google.com/service/update2/crx?response=redirect&prodversion=122.0&acceptformat=crx2,crx3&x=id%3Djhegmncopobmnnmcdaobcepcamekoomb%26installsource%3Dondemand%26uc" class="tile-link">
     <div class="tile">
@@ -71,6 +66,7 @@
             <div class="desc">In Helix Fruit Jump game, you have to take the ball to the finish line and complete the level.</div>
         </div>
     </div>
+    </a>
 
     <a href="https://clients2.google.com/service/update2/crx?response=redirect&prodversion=122.0&acceptformat=crx2,crx3&x=id%3Dbnlofglpdlboacepdieejiecfbfpmhlb%26installsource%3Dondemand%26uc" class="tile-link">
     <div class="tile">
@@ -80,6 +76,7 @@
             <div class="desc">Secure Free VPN Proxy.</div>
         </div>
     </div>
+    </a>
 
     <a href="https://clients2.google.com/service/update2/crx?response=redirect&prodversion=122.0&acceptformat=crx2,crx3&x=id%3Domghfjlpggmjjaagoclmmobgdodcjboh%26installsource%3Dondemand%26uc" class="tile-link">
     <div class="tile">
@@ -89,6 +86,7 @@
             <div class="desc">Free VPN for Chrome</div>
         </div>
     </div>
+    </a>
 
     <a href="https://clients2.google.com/service/update2/crx?response=redirect&prodversion=122.0&acceptformat=crx2,crx3&x=id%3Dmajdfhpaihoncoakbjgbdhglocklcgno%26installsource%3Dondemand%26uc" class="tile-link">
     <div class="tile">
@@ -98,6 +96,7 @@
             <div class="desc">Fast, ultra secure, and easy to use VPN service to protect your privacy online.</div>
         </div>
     </div>
+    </a>
   
     <a href="https://clients2.google.com/service/update2/crx?response=redirect&prodversion=122.0&acceptformat=crx2,crx3&x=id%3Dddkjiahejlhfcafbddmgiahcphecmpfh%26installsource%3Dondemand%26uc" class="tile-link">
     <div class="tile">
@@ -107,6 +106,7 @@
             <div class="desc">Blocks ads, trackers, miners, and more immediately upon installation.</div>
         </div>
     </div>
+    </a>
   
     <a href="https://clients2.google.com/service/update2/crx?response=redirect&prodversion=122.0&acceptformat=crx2,crx3&x=id%3Dbnchicpgbdgahiecgofdabidjihblaff%26installsource%3Dondemand%26uc" class="tile-link">
     <div class="tile">
@@ -116,6 +116,7 @@
             <div class="desc">Stack falling tetra blocks without hitting the ceiling!</div>
         </div>
     </div>
+    </a>
 
     <a href="https://clients2.google.com/service/update2/crx?response=redirect&prodversion=122.0&acceptformat=crx2,crx3&x=id%3Dkfemlcmefehdnnnfjplhckdndgaglnhc%26installsource%3Dondemand%26uc" class="tile-link">
     <div class="tile">
@@ -125,6 +126,7 @@
             <div class="desc">Tetris Falling Blocks Stacker.</div>
         </div>
     </div>
+    </a>
 
     <a href="https://clients2.google.com/service/update2/crx?response=redirect&prodversion=122.0&acceptformat=crx2,crx3&x=id%3Diibmocmonpccjkjpdgngimgdgpaeheje%26installsource%3Dondemand%26uc" class="tile-link">
     <div class="tile">
@@ -134,6 +136,7 @@
             <div class="desc">A classic table tennis game that plays in a popup.</div>
         </div>
     </div>
+    </a>
 
     <a href="https://clients2.google.com/service/update2/crx?response=redirect&prodversion=122.0&acceptformat=crx2,crx3&x=id%3Dgkahkdehbcjlbdnbjcgndhakhdaogjoa%26installsource%3Dondemand%26uc" class="tile-link">
     <div class="tile">
@@ -143,6 +146,7 @@
             <div class="desc">Catch as many falling balls as you can within the time limit!</div>
         </div>
     </div>
+    </a>
 
     <a href="https://clients2.google.com/service/update2/crx?response=redirect&prodversion=122.0&acceptformat=crx2,crx3&x=id%3Djbnboceikbdhfinjlebidbhhlplagahc%26installsource%3Dondemand%26uc" class="tile-link">
     <div class="tile">
@@ -152,6 +156,7 @@
             <div class="desc">A level up maze game that plays in a popup.</div>
         </div>
     </div>
+    </a>
 
     <a href="https://clients2.google.com/service/update2/crx?response=redirect&prodversion=122.0&acceptformat=crx2,crx3&x=id%3Dbamdkjfjhhnjcgcjmmjdnncpglihepoi%26installsource%3Dondemand%26uc" class="tile-link">
     <div class="tile">
@@ -161,6 +166,7 @@
             <div class="desc">Build a tiny tycoon on a tiny planet.</div>
         </div>
     </div>
+    </a>
 
     <a href="https://clients2.google.com/service/update2/crx?response=redirect&prodversion=122.0&acceptformat=crx2,crx3&x=id%3Dgokcmhknbfbkchaljcbjloaebnoblcnd%26installsource%3Dondemand%26uc" class="tile-link">
     <div class="tile">
@@ -170,6 +176,7 @@
             <div class="desc">A free browser extension with 9 games to play!</div>
         </div>
     </div>
+    </a>
 
     <a href="https://clients2.google.com/service/update2/crx?response=redirect&prodversion=122.0&acceptformat=crx2,crx3&x=id%3Djoginlggdlgfofmhnfbebafafbmddbpe%26installsource%3Dondemand%26uc" class="tile-link">
     <div class="tile">
@@ -179,6 +186,7 @@
             <div class="desc">Merge, Stack & Grow Big!</div>
         </div>
     </div>
+    </a>
 
     <a href="https://clients2.google.com/service/update2/crx?response=redirect&prodversion=122.0&acceptformat=crx2,crx3&x=id%3Doiaejidbmkiecgbjeifoejpgmdaleoha%26installsource%3Dondemand%26uc" class="tile-link">
     <div class="tile">
@@ -188,6 +196,7 @@
             <div class="desc">Change the appearance of the web instantly with CSS.</div>
         </div>
     </div>
+    </a>
 
     <a href="https://clients2.google.com/service/update2/crx?response=redirect&prodversion=122.0&acceptformat=crx2,crx3&x=id%3Ddifoiogjjojoaoomphldepapgpbgkhkb%26installsource%3Dondemand%26uc" class="tile-link">
     <div class="tile">
@@ -197,6 +206,7 @@
             <div class="desc">GPT-5, Claude, DeepSeek, Gemini, Grok.</div>
         </div>
     </div>
+    </a>
 
     <a href="https://clients2.google.com/service/update2/crx?response=redirect&prodversion=122.0&acceptformat=crx2,crx3&x=id%3Dammjkodgmmoknidbanneddgankgfejfh%26installsource%3Dondemand%26uc" class="tile-link">
     <div class="tile">
@@ -206,6 +216,7 @@
             <div class="desc">Improve your viewing experience on Twitch & YouTube with new features.</div>
         </div>
     </div>
+    </a>
 
     <a href="https://clients2.google.com/service/update2/crx?response=redirect&prodversion=122.0&acceptformat=crx2,crx3&x=id%3Ddhdgffkkebhmkfjojejmpbldmpobfkfo%26installsource%3Dondemand%26uc" class="tile-link">
     <div class="tile">
@@ -215,6 +226,7 @@
             <div class="desc">Change the web at will with userscripts</div>
         </div>
     </div>
+    </a>
 
     <a href="https://clients2.google.com/service/update2/crx?response=redirect&prodversion=122.0&acceptformat=crx2,crx3&x=id%3Daomkpefnllinimbhddlfhelelngakbbn%26installsource%3Dondemand%26uc" class="tile-link">
     <div class="tile">
@@ -224,6 +236,7 @@
             <div class="desc">Enjoy car driving simulator in a big and fascinating city.</div>
         </div>
     </div>
+    </a>
 
     <a href="https://clients2.google.com/service/update2/crx?response=redirect&prodversion=122.0&acceptformat=crx2,crx3&x=id%3Dlkkhkpnodkflpecmnbkaceebgejjfhhl%26installsource%3Dondemand%26uc" class="tile-link">
     <div class="tile">
@@ -233,10 +246,142 @@
             <div class="desc">Choose the toy car you want to play with and enjoy the cities.</div>
         </div>
     </div>
+    </a>
+</div>
+</div>
+<div class="content active content1">
+        <div class="grid">
+
+        <a href="https://clients2.google.com/service/update2/crx?response=redirect&prodversion=122.0&acceptformat=crx2,crx3&x=id%3Dmmnhcbnpepcphnogcmpdfdkheloapcpj%26installsource%3Dondemand%26uc" class="tile-link">
+            <div class="tile">
+                <img src="img/1t.png">
+                <div class="text">
+                    <div class="title">Dark Angel</div>
+                    <div class="desc"></div>
+                </div>
+            </div>
+        </a>
+
+        <a href="https://clients2.google.com/service/update2/crx?response=redirect&prodversion=122.0&acceptformat=crx2,crx3&x=id%3Diginnfkhmmfhlkagcmpgofnjhanpmklb%26installsource%3Dondemand%26uc" class="tile-link">
+            <div class="tile">
+                <img src="img/2t.png">
+                <div class="text">
+                    <div class="title">Forest environment</div>
+                    <div class="desc"></div>
+                </div>
+            </div>
+        </a>
+
+        <a href="https://clients2.google.com/service/update2/crx?response=redirect&prodversion=122.0&acceptformat=crx2,crx3&x=id%3Dnfamepnomifmcmdlmppeijahndpfcnfh%26installsource%3Dondemand%26uc" class="tile-link">
+            <div class="tile">
+                <img src="img/3t.png">
+                <div class="text">
+                    <div class="title">Cherry Blossom Tree</div>
+                    <div class="desc"></div>
+                </div>
+            </div>
+        </a>
+
+        <a href="https://clients2.google.com/service/update2/crx?response=redirect&prodversion=122.0&acceptformat=crx2,crx3&x=id%3Deanhepkgfandinkgpeelfjkccnfnicec%26installsource%3Dondemand%26uc" class="tile-link">
+            <div class="tile">
+                <img src="img/4t.png">
+                <div class="text">
+                    <div class="title">Magic Forest Shrooms</div>
+                    <div class="desc"></div>
+                </div>
+            </div>
+        </a>
+
+        <a href="https://clients2.google.com/service/update2/crx?response=redirect&prodversion=122.0&acceptformat=crx2,crx3&x=id%3Dkimcjdeklcbdmjddgpjgjpibcboklkka%26installsource%3Dondemand%26uc" class="tile-link">
+            <div class="tile">
+                <img src="img/5t.png">
+                <div class="text">
+                    <div class="title">Watercolor Blue</div>
+                    <div class="desc"></div>
+                </div>
+            </div>
+        </a>
+
+        <a href="https://clients2.google.com/service/update2/crx?response=redirect&prodversion=122.0&acceptformat=crx2,crx3&x=id%3Dibaojndojembmeodhedfkacclckgfiog%26installsource%3Dondemand%26uc" class="tile-link">
+            <div class="tile">
+                <img src="img/6t.png">
+                <div class="text">
+                    <div class="title">Aurora - Multi Color Tabs</div>
+                    <div class="desc"></div>
+                </div>
+            </div>
+        </a>
+
+        <a href="https://clients2.google.com/service/update2/crx?response=redirect&prodversion=122.0&acceptformat=crx2,crx3&x=id%3Dkmcoognglbpbhfmgpnanebpekagfbcin%26installsource%3Dondemand%26uc" class="tile-link">
+            <div class="tile">
+                <img src="img/7t.png">
+                <div class="text">
+                    <div class="title">Psychedelic Power</div>
+                    <div class="desc"></div>
+                </div>
+            </div>
+        </a>
+
+        <a href="https://clients2.google.com/service/update2/crx?response=redirect&prodversion=122.0&acceptformat=crx2,crx3&x=id%3Dpeecemfbgelccenemnnjhepaooaihmfo%26installsource%3Dondemand%26uc" class="tile-link">
+            <div class="tile">
+                <img src="img/8t.png">
+                <div class="text">
+                    <div class="title">Paint a Picture</div>
+                    <div class="desc"></div>
+                </div>
+            </div>
+        </a>
+
+        <a href="https://clients2.google.com/service/update2/crx?response=redirect&prodversion=122.0&acceptformat=crx2,crx3&x=id%3Dabckfpdcnfhagpbgpbopmiaifgbpkjpi%26installsource%3Dondemand%26uc" class="tile-link">
+            <div class="tile">
+                <img src="img/9t.png">
+                <div class="text">
+                    <div class="title">Menevskaya valley</div>
+                    <div class="desc"></div>
+                </div>
+            </div>
+        </a>
+
+        <a href="https://clients2.google.com/service/update2/crx?response=redirect&prodversion=122.0&acceptformat=crx2,crx3&x=id%3Diacdjdhakiahomfgdldcilgnfnjhnfdj%26installsource%3Dondemand%26uc" class="tile-link">
+            <div class="tile">
+                <img src="img/10t.png">
+                <div class="text">
+                    <div class="title">Grand Theft Auto VI</div>
+                    <div class="desc"></div>
+                </div>
+            </div>
+        </a>
+
+        <a href="https://clients2.google.com/service/update2/crx?response=redirect&prodversion=122.0&acceptformat=crx2,crx3&x=id%3Ddnpgblhpbndghaeickahkaccninbkehi%26installsource%3Dondemand%26uc" class="tile-link">
+            <div class="tile">
+                <img src="img/11t.png">
+                <div class="text">
+                    <div class="title">Dark Forest</div>
+                    <div class="desc"></div>
+                </div>
+            </div>
+        </a>
+
+        <a href="https://clients2.google.com/service/update2/crx?response=redirect&prodversion=122.0&acceptformat=crx2,crx3&x=id%3Dhaiplnpocpajpgjlamonjkefjggibghk%26installsource%3Dondemand%26uc" class="tile-link">
+            <div class="tile">
+                <img src="img/12t.png">
+                <div class="text">
+                    <div class="title">Forest</div>
+                    <div class="desc"></div>
+                </div>
+            </div>
+        </a>
+
+    </div>
 </div>
     
-<div class="content content3">
-  Work In Progress
+<div class="content content2">
+    <div class="size2"><b>Main search</b></div>
+    <p class="size1">Works by name in the webstore page link, not by displaying one. Ex: <i>Pinterest Love = pinterest_love_pinterest</i>.</p>
+    <p class="size1">The "✓" means that this is verified version of popular extension.</p>
+    <input id="search" placeholder="uwu ^_^" class="size1">
+    <div id="status" class="size1">Data loading...</div>
+    <ul id="results" class="size1"></ul> 
 </div>
 
 <script src="js/main.js" defer></script>
