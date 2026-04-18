@@ -55,5 +55,16 @@ const EXTENSIONS_DATA = [
     { id: "boabmhiakmbbkgjcekpmbihapljoaioc", title: "Watchtime Tracker", desc: "Track your activity on Youtube and Twitch", img: "img/54.png", category: "utils" },
     { id: "hodiladlefdpcbemnbbcpclbmknkiaem", title: "Google Meet Enhanced", desc: "Virtual Green Screens, Blur, Pixelate, 3D Filters and More!", img: "img/55.png", category: "utils" },
     { id: "nfmjbheokmeabfpibbgnjbjoplnhhpdk", title: "Pinterest Dark Mode & Theme", desc: "Enjoy Pinterest with a stylish dark mode.", img: "img/56.png", category: "utils" },
-    { id: "inomeogfingihgjfjlpeplalcfajhgai", title: "Chrome Remote Desktop", desc: "This is the companion extension for the Chrome Remote Desktop website.", img: "img/57.png", category: "utils" }
+    { id: "inomeogfingihgjfjlpeplalcfajhgai", title: "Chrome Remote Desktop", desc: "This is the companion extension for the Chrome Remote Desktop website.", img: "img/57.png", category: "utils" },
+    { id: "ofpnmcalabcbjgholdjcjblkibolbppb", title: "Monica: Smartest AI Agent", desc: "One stop AI Assistant with GPT, Claude, Gemini.", img: "img/58.png", category: "utils" },
+    { id: "aaekanoannlhnajolbijaoflfhikcgng", title: "Charcoal: Dark Mode for Messenger", desc: "Unofficial Messenger dark mode.", img: "img/59.png", category: "utils" },
+    { id: "ohicbclhdmkhoabobgppffepcopomhgl", title: "Shadertoy unofficial plugin", desc: "Shadertoy.com unofficial plugin.", img: "img/60.png", category: "utils" },
+    { id: "cofdbpoegempjloogbagkncekinflcnj", title: "DeepL", desc: "Translate while you read and write with DeepL Translate, the world’s most accurate translator.", img: "img/61.png", category: "utils" },
+    { id: "clngdbkpkpeebahjckkjfobafhncgmne", title: "Stylus", desc: "Redesign the web with Stylus, a user styles manager.", img: "img/62.png", category: "utils" },
+    { id: "bhlhnicpbhignbdhedgjhgdocnmhomnp", title: "ColorZilla", desc: "Advanced Eyedropper, Color Picker, Gradient Generator and other colorful goodies", img: "img/63.png", category: "utils" },
+    { id: "bkhaagjahfmjljalopjnoealnfndnagc", title: "Octotree - GitHub code tree", desc: "Browser extension that enhances GitHub code review and exploration.", img: "img/64.png", category: "utils" },
+    { id: "anlikcnbgdeidpacdbdljnabclhahhmd", title: "Enhanced GitHub", desc: "Display repo size, size of each file, download link and option to copy file contents", img: "img/65.png", category: "utils" },
+    { id: "bggfcpfjbdkhfhfmkjpbhnkhnpjjeomc", title: "Material Icons for GitHub", desc: "Material icons for the file browser of popular websites like GitHub, Azure, Bitbucket etc.", img: "img/66.png", category: "utils" },
+    { id: "oiekdmlabennjdpgimlcpmphdjphlcha", title: "Tripadvisor", desc: "Find the best hotels, restaurants, and attractions worldwide with trusted Tripadvisor reviews.", img: "img/67.png", category: "utils" },
+    { id: "ndpldekfjnbjhflkfgncpphppofkcnkl", title: "Wordle Game", desc: "Wordle is a web-based word game. Play Wordle here online for free!", img: "img/68.png", category: "games" }
 ];
