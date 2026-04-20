@@ -30,7 +30,7 @@ const EXTENSIONS_DATA = [
     { id: "jobnghcjlacpahmhpjgamjgemgdalolh", title: "Sci Fi Flight Simulator", desc: "In this flight simulator game, try to complete the levels by collecting the spheres on the stage.", img: "img/29.png", category: "games" },
     { id: "nhkhnfcomlemdgplceegnangmahdfomg", title: "Classic Uno Game", desc: "When playing uno against your opponent, you must first run out of cards in your hand.", img: "img/30.png", category: "games" },
     { id: "hpgaehmokjbdfkbgkeifbfogjalkpfgb", title: "NTL MOD for Slither.io", desc: "Advanced slither.io mod for pro players", img: "img/31.png", category: "games" },
-    { id: "hpgaehmokjbdfkbgkeifbfogjalkpfgb", title: "Better Lyrics", desc: "Enhance YouTube Music with beautiful time-synced lyrics, multilingual support, real-time translations and more", img: "img/32.png", category: "utils" },
+    { id: "hpgaehmokjbdfkbgkeifbfogjalkpfgb", title: "Better Lyrics", desc: "Enhance YouTube Music with beautiful time-synced lyrics, multilingual support, real-time translations and more", img: "img/32.png", category: "social" },
     { id: "pjafcgbpdclmdeiipolenjgkikeldljl", title: "Chrome Piano", desc: "Play the piano in your browser", img: "img/33.png", category: "games" },
     { id: "gebbhagfogifgggkldgodflihgfeippi", title: "Return YouTube Dislike", desc: "Return YouTube Dislike restores the ability to see dislikes on YouTube.", img: "img/34.png", category: "social" },
     { id: "jiaopdjbehhjgokpphdfgmapkobbnmjp", title: "Youtube-shorts block", desc: "Play the Youtube shorts video as if it were a normal video.", img: "img/35.png", category: "social" },
@@ -76,5 +76,18 @@ const EXTENSIONS_DATA = [
     { id: "jjicbefpemnphinccgikpdaagjebbnhg", title: "CSFloat Market Checker", desc: "Shows the float value, paint seed, and more of CS2 items on the Steam Market.", img: "img/75.png", category: "utils" },
     { id: "ponfpcnoihfmfllpaingbgckeeldkhle", title: "Enhancer for YouTube™", desc: "Take control of YouTube and boost your user experience!", img: "img/76.png", category: "social" },
     { id: "mmioliijnhnoblpgimnlajmefafdfilb", title: "Shazam", desc: "Find song names from your browser.", img: "img/77.png", category: "utils" },
-    { id: "efaidnbmnnnibpcajpcglclefindmkaj", title: "Adobe Acrobat", desc: "PDF edit, convert, sign tools.", img: "img/78.png", category: "utils" }
+    { id: "efaidnbmnnnibpcajpcglclefindmkaj", title: "Adobe Acrobat", desc: "PDF edit, convert, sign tools.", img: "img/78.png", category: "utils" },
+// Themes
+    { id: "mmnhcbnpepcphnogcmpdfdkheloapcpj", title: "Dark Angel", desc: "", img: "img/1t.png", category: "themes" },
+    { id: "nfamepnomifmcmdlmppeijahndpfcnfh", title: "Forest environment", desc: "", img: "img/2t.png", category: "themes" },
+    { id: "lelfanicbadaahlibeimcpfpedfjccnk", title: "Cherry Blossom Tree", desc: "", img: "img/3t.png", category: "themes" },
+    { id: "eanhepkgfandinkgpeelfjkccnfnicec", title: "Magic Forest Shrooms", desc: "", img: "img/4t.png", category: "themes" },
+    { id: "kimcjdeklcbdmjddgpjgjpibcboklkka", title: "Watercolor Blue", desc: "", img: "img/5t.png", category: "themes" },
+    { id: "ibaojndojembmeodhedfkacclckgfiog", title: "Aurora - Multi Color Tabs", desc: "", img: "img/6t.png", category: "themes" },
+    { id: "kmcoognglbpbhfmgpnanebpekagfbcin", title: "Psychedelic Power", desc: "", img: "img/7t.png", category: "themes" },
+    { id: "peecemfbgelccenemnnjhepaooaihmfo", title: "Paint a Picture", desc: "", img: "img/8t.png", category: "themes" },
+    { id: "abckfpdcnfhagpbgpbopmiaifgbpkjpi", title: "Menevskaya valley", desc: "", img: "img/9t.png", category: "themes" },
+    { id: "iacdjdhakiahomfgdldcilgnfnjhnfdj", title: "Grand Theft Auto VI", desc: "", img: "img/10t.png", category: "themes" },
+    { id: "dnpgblhpbndghaeickahkaccninbkehi", title: "Dark Forest", desc: "", img: "img/11t.png", category: "themes" },
+    { id: "haiplnpocpajpgjlamonjkefjggibghk", title: "Forest", desc: "", img: "img/12t.png", category: "themes" },
 ];

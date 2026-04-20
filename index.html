@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>CRX Extension Downloader</title>
@@ -17,8 +17,7 @@
 
 <div class="tabs">
     <button onclick="openTab(0)">Extensions</button>
-    <button onclick="openTab(1)">Themes</button>
-    <button onclick="openTab(2)">Search</button>
+    <button onclick="openTab(1)">Search</button>
 </div>
 
 <a href="https://github.com/Lutsic/crx-extension-downloader">
@@ -35,14 +34,9 @@
             <button class="filter-btn" data-category="social">Social</button>
             <button class="filter-btn" data-category="ui">Appearance</button>
             <button class="filter-btn" data-category="utils">Utils</button>
+            <button class="filter-btn" data-category="themes">Themes</button>
         </div>
         <div class="grid" id="extensions-grid"></div>
-    </div>
-</div>
-
-<div class="content content1">
-    <div class="themes-container">
-        <div class="grid" id="themes-grid"></div>
     </div>
 </div>
     
@@ -56,7 +50,6 @@
     <ul id="results" class="results"></ul> 
 </div>
 
-<script src="data/themes.js"></script>
 <script src="data/extensions.js"></script>
 <script src="js/main.js" defer></script>
 </body>
