@@ -1,6 +1,11 @@
-const search = document.getElementById("search");
+const globalContainer = document.getElementById("global-search-container");
 const results = document.getElementById("results");
 const statusEl = document.getElementById("status");
+const searchInput = document.getElementById("search");
+const globalToggle = document.getElementById("global-toggle");
+const grid = document.getElementById("extensions-grid");
+const filtersPanel = document.getElementById("filters-panel");
+
 
 function renderExtensions(category = "all") {
     const grid = document.getElementById("extensions-grid");
@@ -44,12 +49,6 @@ function initExtensionFilters() {
     });
 }
 
-function openTab(index) {
-    let tabs = document.querySelectorAll('.content');
-    tabs.forEach(tab => tab.classList.remove('active'));
-    tabs[index].classList.add('active');
-}
-
 function loadScript(url) {
     return new Promise((resolve, reject) => {
         const s = document.createElement("script");
@@ -60,26 +59,37 @@ function loadScript(url) {
     });
 }
 
+
+
 window.addEventListener('load', () => {
 
     renderExtensions("all");
 
     initExtensionFilters();
 
-    loadScript("https://github.com/Lutsic/crx-extension-downloader/releases/download/release/data.js")
-        .then(() => {
-            statusEl.textContent = "All data loaded correctly";
-        })
-        .catch(err => {
-            console.error(err);
-            statusEl.textContent = "Error during data loading: " + err.message;
-        });
+// Global search checkbox
+    globalToggle.addEventListener('change', () => {
+        isGlobalSearch = globalToggle.checked;
 
-    search.oninput = () => {
-        const q = search.value.toLowerCase();
+        if (isGlobalSearch) {
+            grid.style.display = "none";
+//            globalContainer.style.display = "block";
+            results.style.display = "block";
+        } else {
+            grid.style.display = "grid";
+ //           globalContainer.style.display = "none";
+             results.style.display = "none";
+             renderExtensions("all"); 
+        }
+    });
+
+    // search
+   globalContainer.oninput = () => {
+        const q = globalContainer.value.toLowerCase();
         results.innerHTML = "";
         if (typeof DATA === "undefined" || !q) return;
 
+        if (isGlobalSearch){
         let count = 0;
         for (const name in DATA) {
             if (name.toLowerCase().includes(q)) {
@@ -90,8 +100,23 @@ window.addEventListener('load', () => {
                 a.target = "_blank";
                 li.appendChild(a);
                 results.appendChild(li);
-                if (++count >= 100) break;
-            }
+                if (++count >= 50) break;
+       
+    }   else {
+    
+        }
+        }
         }
     };
+
+
+    loadScript("https://github.com/Lutsic/crx-extension-downloader/releases/download/release/data.js")
+        .then(() => {
+            statusEl.textContent = "✓";
+        })
+        .catch(err => {
+            console.error(err);
+            statusEl.textContent = "Error during data loading: " + err.message;
+        });
+
 });

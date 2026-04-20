@@ -10,13 +10,9 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-.text-arial {
-  font-family: Arial, sans-serif;
-}
-
 .header { 
 color: white;
-height: 25vh;
+height: 22vh;
 background: #4984eb;
 background: linear-gradient(90deg,rgba(73, 132, 235, 1) 0%, rgba(79, 84, 196, 1) 50%);
 padding-top: 21px;
@@ -26,45 +22,12 @@ font-size: 5vh;
 border-bottom: 3px solid white;
 } 
 
-.tabs {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    margin: 0 17%;
-    margin-top: -6vh;
-
-    gap: 40%;
-}
-
-.tabs button {
-    flex: 1;
-    height: 6vh;
-    background: #0f141d;
-    color: whitesmoke;
-
-    font-size: 2.5vh;
-    border-radius: 10px 10px 0 0;
-    border: none;
-    cursor: pointer;
-}
-
-
 .content {
-    display: none;
+    display: block;
     margin: 0 5%;
     padding: 20px;
     background: #0f141d;
     border-radius: 0 10px 10px 10px;
-}
-
-.active.content2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.active {
-    display: block;
 }
 
 .github_icon {
@@ -75,13 +38,8 @@ top: 10px;
 left: 20px;
 }
 
-.size1 {
-font-size: 3.5vh;
+.text1 {
 color: whitesmoke;
-position: relative;
-display: flex;
-flex-direction: column;
-align-items: center;
 }
 
 .results {
@@ -92,19 +50,8 @@ position: relative;
 display: flex;
 flex-direction: column;
 align-items: center;
-text-align: center;
+text-align: left;
 text-decoration: none;
-}
-
-.count {
-font-size: 4.0vh;
-color: whitesmoke;
-position: relative;
-display: flex;
-flex-direction: column;
-align-items: center;
-padding-top: 0.1rem;
-padding-bottom: 1.1rem;
 }
 
 a {
@@ -113,45 +60,20 @@ a {
     text-decoration: none; 
 }
 
-.size2 {
-font-size: 3.0vh;
-color: whitesmoke;
-position: relative;
-display: flex;
-flex-direction: column;
-align-items: center;
-}
-
-.main_search { 
-font-size: 6vh;
---tw-text-opacity: 1;
-color: rgb(96 165 250 / var(--tw-text-opacity, 1));
-line-height: 80px;  
-position: relative;
-display: flex;
-flex-direction: column;
-align-items: center;
-padding-top: 1.5rem;
-padding-bottom: 0.01rem;
-text-align: center;
-}
-
 .search_box { 
-font-size: 3.4vh;
-background: linear-gradient(135deg,#4f96fff2,#777afff2);
-box-shadow: 0 1px 2px #0000004d,0 8px 30px #3b82f659;
-color: whitesmoke;
-position: relative;
-display: flex;
-flex-direction: column;
-align-items: center;
-text-align: center;
-border-radius: 7px;
-padding-top: 1rem;
-padding: 10px 5px;
+    width: 92%;
+    padding: 16px 1px 16px 20px;
+    background: linear-gradient(90deg, #4984eb, #4f54c4);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 2.2vh;
+    font-weight: 700;
+    text-align: left;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
 }
-
-
 
 .tabs + .content {
     margin-top: 0;
@@ -226,6 +148,7 @@ gap: 30px;
     background: linear-gradient(90deg,rgba(39, 86, 168, 1) 0%, rgba(79, 84, 196, 0.09) 50%);
     border-radius: 12px;
     padding: 15px;
+    margin-left: 1px;
     height: fit-content;
     position: sticky;
     top: 20px;

@@ -15,19 +15,25 @@
     <h6>An easy way to get .crx file of any extension on Chrome Web Store!</h6>
 </div>
 
-<div class="tabs">
-    <button onclick="openTab(0)">Extensions</button>
-    <button onclick="openTab(1)">Search</button>
-</div>
-
 <a href="https://github.com/Lutsic/crx-extension-downloader">
   <img src="img/github_icon.png" class="github_icon">
 </a>
     
 
-<div class="content active content0">  
+<div class="content">  
     <div class="extensions-container">
         <div class="sidebar">
+        <div class="search-section">
+        <input id="global-search-container" placeholder="search..." class="search_box">
+
+        <div class="search-options">
+            <label class="toggle-label">
+                <input type="checkbox" id="global-toggle">
+                <span class="toggle-text text1"><b>Global search</b></span>
+                <span id="status" class="text1"><b>✕</b></span>
+            </label>
+        </div>
+    </div>
             <button class="filter-btn active" data-category="all">All</button>
             <button class="filter-btn" data-category="games">Games</button>
             <button class="filter-btn" data-category="vpn">VPN & Privacy</button>
@@ -35,20 +41,12 @@
             <button class="filter-btn" data-category="ui">Appearance</button>
             <button class="filter-btn" data-category="utils">Utils</button>
             <button class="filter-btn" data-category="themes">Themes</button>
+            
         </div>
         <div class="grid" id="extensions-grid"></div>
+        <ul id="results" class="results"></ul> 
     </div>
-</div>
-    
-<div class="content content2">
-    <div class="main_search"><b>Extesions and Themes search</b></div>
-    <p class="count">250.000+ extensions & themes</p>
-    <p class="size1">Works by name in the webstore page link, not by displaying one. <i>Ex: Pinterest Love = pinterest_love_pinterest.</i></p>
-    <p class="size1">The "✓" means that this is verified version of popular extension.</p>
-    <input id="search" placeholder="search..." class="search_box">
-    <div id="status" class="size2">Data loading...</div>
-    <ul id="results" class="results"></ul> 
-</div>
+</div>   
 
 <script src="data/extensions.js"></script>
 <script src="js/main.js" defer></script>
